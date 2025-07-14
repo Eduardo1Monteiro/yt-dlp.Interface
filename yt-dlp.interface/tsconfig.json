@@ -1,17 +1,24 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "sourceMap": true,
+    "resolveJsonModule": true
+  },
   "include": [
-    "src"
+    "ui/**/*",
+    "**/*.tsx",
+    "**/*.ts"
   ],
   "exclude": [
-    "src/electron"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
+    "node_modules",
+    "electron"
   ]
 }
