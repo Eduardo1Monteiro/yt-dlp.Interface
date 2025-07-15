@@ -1,4 +1,11 @@
-const apiKey: string = "REDACTED";
+import dotenv from 'dotenv';
+dotenv.config();
+
+const apiKey = process.env.apiKey;
+
+if (!apiKey) {
+  throw new Error('apiKey isnt defined in .env');
+}
 
 async function getData(searchElement: string = ""): Promise<any> {
 
