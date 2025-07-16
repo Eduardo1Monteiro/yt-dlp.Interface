@@ -1,1 +1,1 @@
-{"root":["./src/ui/App.tsx","./src/ui/main.tsx","./src/ui/vite-env.d.ts","./src/ui/Main-Window/mainWindow-util.ts"],"version":"5.8.3"}
+{"root":["./src/ui/App.tsx","./src/ui/main.tsx","./src/ui/Main-Window/VideoTemplate/VideoTemplate.tsx","./src/ui/Main-Window/searchBar/SearchBar.tsx","./vite.config.ts","./src/electron/main.ts","./src/electron/util.ts","./src/ui/vite-env.d.ts","./src/ui/Main-Window/getData/getData.ts"],"version":"5.8.3"}

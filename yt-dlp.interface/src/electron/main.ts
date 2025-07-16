@@ -1,7 +1,6 @@
 import { app, BrowserWindow } from 'electron';
 import path from 'path';
 import { isDev } from './util.js';
-import getData from './mainWindow-util.js'
 
 function createMainWindow(): void {
   const mainWindow = new BrowserWindow({
@@ -24,11 +23,3 @@ app.on("window-all-closed", (): void => {
 app.on("activate", (): void => {
   if (BrowserWindow.getAllWindows().length === 0) createMainWindow();
 })
-
-getData("lofi hip hop").then((data: any) => {
-  console.log(data?.items);
-});
-
-getData().then((data: any) => {
-  console.log("Trending:", data?.items);
-});
